@@ -1,0 +1,60 @@
+/* .text_dev {
+    font-family: "Note Sans", sans-serif;
+    background-image: url(images/Animate.jpg);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: animate 20s linear infinite;
+} 
+    
+@keyframes animate {
+    to {
+        background-position-x: -500px;
+    }
+}*/
+
+.text_dev {
+    font-family: "Noto Sans", sans-serif;
+    background-image: url("../assets/animates.jpg");
+    background-size: cover;
+    background-position: 0 50%;
+    
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    from {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: -500px;
+    }
+}
+
+
+
+.span::after {
+    content: "DEVELOPPEUR WEB";
+    animation: words 6s infinite;
+
+}
+
+@keyframes words {
+    0%, 33% {
+        content: "DEVELOPPEUR WEB";
+        /* color: violet; */
+    }
+    34%, 66% {
+        content: "GRAPHISTE";
+        /* color: orange; */
+    }
+    /* 67%, 100% {
+        content: "DESIGNER UI/UX";
+        color: blue;
+    } */
+}
+

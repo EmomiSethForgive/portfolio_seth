@@ -1,0 +1,56 @@
+.button_contact:hover {
+    color: white;
+    background: linear-gradient(135deg, #06E07F, #06E07F);
+    box-shadow: 0 0 25px #06E07F, 0 0 50px #06E07F;
+    transform: translateY(-3px);
+}
+.button_contact:hover {
+    color: white;
+    background: linear-gradient(135deg, #06E07F, #06E07F);
+    box-shadow: 0 0 25px #06E07F, 0 0 50px #06E07F;
+    transform: translateY(-3px);
+}
+
+
+
+
+.button_a {
+  position: relative;
+  display: inline-flex;          /* 🔥 clé du problème */
+  align-items: center;           /* image + texte alignés */
+  gap: 6px;                      /* espace entre image et texte */
+  padding: 6px 10px;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;           /* empêche le retour à la ligne */
+}
+
+/* Ligne haut */
+.button_a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: #06E07F;
+  top: 0;
+  right: 0;
+  transition: width 0.5s ease;
+}
+
+/* Ligne bas */
+.button_a::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: #06E07F;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s ease;
+}
+
+.button_a:hover::after,
+.button_a:hover::before {
+  width: 100%;
+}
+    

@@ -1,0 +1,47 @@
+.tech-card {
+    position: relative;
+    padding: 24px;
+    border-radius: 16px;
+    background: #E8E8E8;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Bordure animée */
+.tech-card::before {
+    content: "";
+    position: absolute;
+    inset: -50%;
+    background: linear-gradient(180deg, #06E07F, white, #06E07F);
+    animation: rotateBorder 4s linear infinite;
+    opacity: 0.7;
+}
+
+/* Fond intérieur */
+.tech-card::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: #E8E8E8;
+    border-radius: 14px;
+    z-index: 1;
+}
+
+/* Contenu */
+.tech-card img {
+    position: relative;
+    z-index: 2;
+}
+
+/* Animation */
+@keyframes rotateBorder {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

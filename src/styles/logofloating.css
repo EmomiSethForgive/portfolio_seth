@@ -1,0 +1,12 @@
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.floating-logo {
+  animation: floating 3s ease-in-out infinite;
+}

@@ -1,0 +1,32 @@
+
+/* 
+.card4 {
+    transform: perspective(800px) rotateX(45deg) scale(0.7);
+    transition: transform 0.5s ease, box-shadow 0.6s ease;
+
+    box-shadow:
+        0 25px 50px rgba(100, 120, 150, 0.3),
+        inset 0 -4px 8px rgba(255, 255, 255, 0.6);
+}
+
+.card4:hover {
+    transform: perspective(800px) rotateX(0deg) scale(1) translateY(-10px);
+
+    box-shadow:
+        0 35px 70px rgba(80, 100, 130, 0.35),
+        inset 0 -4px 8px rgba(255, 255, 255, 0.6);
+} */
+
+
+
+@media (hover: hover) and (pointer: fine) {
+  .card4 {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .card4:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+}
+
