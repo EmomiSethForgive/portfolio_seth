@@ -68,7 +68,7 @@ export default function Section1() {
                                 <p className={` font-bold text-[#000000] text-[18px] md:text-[28px] lg:text-[32px] ${showFirstText ? "opacity-100" : "opacity-0"
                                     }`}>Je suis
                                 </p>
-                                <span className={` span text_dev font-extrabold text-[18px] text-[#06E07F] md:text-[28px] lg:text-[32px] ${showSecondText ? "opacity-100" : "opacity-0"
+                                <span className={` span text_dev font-extrabold text-[22px] text-[#06E07F] md:text-[29px] lg:text-[32px] ${showSecondText ? "opacity-100" : "opacity-0"
                                     }`}></span>
                             </div>
                             <img src={profit} alt='profit' className={`block md:block lg:hidden w-[250px] md:w-[300px] h-auto ${showThreeText ? "opacity-100" : "opacity-0"

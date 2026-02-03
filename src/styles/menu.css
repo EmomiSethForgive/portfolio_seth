@@ -1,0 +1,41 @@
+
+.button_link {
+  position: relative;
+  display: inline-flex;          /* 🔥 clé du problème */
+  align-items: center;           /* image + texte alignés */
+  gap: 6px;                      /* espace entre image et texte */
+  padding: 6px 10px;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;           /* empêche le retour à la ligne */
+}
+
+/* Ligne haut */
+.button_link::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  top: 0;
+  right: 0;
+  transition: width 0.5s ease;
+}
+
+/* Ligne bas */
+.button_link::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s ease;
+}
+
+.button_link:hover::after,
+.button_link:hover::before {
+  width: 100%;
+}
+    

@@ -8,6 +8,7 @@ import mobilcompétences from '../assets/headers/mobilcompétences.svg'
 import mobilapropos from '../assets/headers/mobilapropos.svg' 
 import mobilréalisation from '../assets/headers/mobilréalisation.svg'
 import contact from '../assets/headers/contact.svg'
+import "../styles/menu.css"
 
 export function MenuBerger({ isOpen, toggleMenu }) {
       const handleNavigation = (id) => {
@@ -37,25 +38,25 @@ export function MenuBerger({ isOpen, toggleMenu }) {
       <div className="flex flex-col gap-2.5 md:gap-4 items-center">
           <button
           onClick={() => handleNavigation("accueil")}
-          className="text-white flex items-center gap-1 text-lg md:text-xl cursor-pointer">
+          className="button_link text-white  flex items-center gap-1 text-lg md:text-xl cursor-pointer">
             <span> <img src={mobilhome} alt="mobil home" className=" w-4 h-4" /></span>
             Accueil
           </button>
         <button
         onClick={() => handleNavigation("apropos")}
-        className="text-white text-lg md:text-xl flex items-center gap-1 cursor-pointer">
+        className="button_link text-white  text-lg md:text-xl flex items-center gap-1 cursor-pointer">
        <span>   <img src={mobilapropos} alt="A propos" className="w-4 h-4" /></span>
           A propos
         </button>
         <button 
         onClick={() => handleNavigation("competences")}
-        className="text-white flex text-lg md:text-xl items-center gap-1 cursor-pointer">
+        className="button_link text-white  flex text-lg md:text-xl items-center gap-1 cursor-pointer">
         <span><img src={mobilcompétences} alt="mobil compétences" className="w-4 h-4" /></span>
           Compétences
         </button>
         <button 
         onClick={() => handleNavigation("réalisations")}
-        className="text-white flex items-center gap-1 text-lg md:text-xl cursor-pointer">
+        className="button_link text-white  flex items-center gap-1 text-lg md:text-xl cursor-pointer">
           <span> <img src={mobilréalisation} alt="mobil réalisations" className="w-5 h-5" /></span>
           Réalisations
         </button>
