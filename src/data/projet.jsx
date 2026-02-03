@@ -7,7 +7,7 @@ export const projet = [
    {
     id: 5,
     imageId: proj6,
-    text: "Reproducton front de Netflix",
+    text: "Reproduction front-end de Netflix",
     tech1: "html5",
     tech2: "CSS3",
     // tech3: "javascript",
