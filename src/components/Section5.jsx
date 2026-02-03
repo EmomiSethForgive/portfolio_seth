@@ -136,12 +136,12 @@ export default function Section5() {
                                         </div>
                                     </a>
 
-                                    {/* <a href="https://github.com/EmomiSethForgive">
+                                    {/* <a href="https://github.com/">
                                         <img src={hub} alt="hub" className="w-6 h-6 md:w-9 md:h-9" />
                                     </a> */}
 
                                     <a
-                                        href="https://github.com/EmomiSethForgive"
+                                        href="https://github.com/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="
@@ -314,7 +314,7 @@ export default function Section5() {
                                     <a href="">
                                         <img src={link} alt="link" className="w-6 h-6 md:w-9 md:h-9" />
                                     </a>
-                                    <a href="https://github.com/EmomiSethForgive">
+                                    <a href="https://github.com/">
                                         <img src={hub} alt="hub" className="w-6 h-6 md:w-9 md:h-9" />
                                     </a>
                                 </div> */}
@@ -365,7 +365,7 @@ export default function Section5() {
 
                                     {/* ===== GITHUB ===== */}
                                     <a
-                                        href="https://github.com/EmomiSethForgive"
+                                        href="https://github.com/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="
